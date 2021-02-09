@@ -37,8 +37,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function UserType()
+    public function role()
     {
-        return $this->belongsTo('App\Roles');
+        return $this->hasOne(Roles::class, 'id', 'role_id');
     }
 }

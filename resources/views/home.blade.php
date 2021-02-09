@@ -5,7 +5,7 @@
 window.onload = function() {
 
 var chart = new CanvasJS.Chart("chartContainer", {
-	animationEnabled: false,
+	animationEnabled: true,
 	data: [{
 		type: "pie",
 		startAngle: 240,

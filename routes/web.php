@@ -25,6 +25,7 @@ Route::get('user/user_view', 'UserController@viewUsers');
 Route::post('user/create', 'UserController@addUser');
 Route::patch('user/update/{id}', 'UserController@updateUser');
 Route::delete('user/delete/{id}', 'UserController@deleteUser');
+
 //change password
 Route::get('/user/change_password', 'UserController@changePassword');
 Route::post('/change-password', 'UserController@changePasswordStore');
